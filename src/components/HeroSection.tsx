@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { RetroButton } from './RetroButton';
 
-// 👉 IMPORT DE L'IMAGE
+// ✅ Import Vite de l'image
 import rocketImg from '../assets/rocket.png';
 
 export function HeroSection() {
     return (
         <section className="relative min-h-screen w-full bg-navy overflow-hidden flex flex-col items-center justify-center pt-20 pb-16 px-4 bg-noise">
             {/* Background Elements */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-navy-light/30 via-navy to-navy pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-navy-light/30 via-navy to-navy pointer-events-none" />
 
             {/* Stars */}
             <div className="absolute top-20 left-10 text-cream/20 text-4xl animate-pulse">
@@ -34,7 +34,7 @@ export function HeroSection() {
                     <h2 className="text-cream/80 text-sm md:text-lg tracking-[0.3em] uppercase font-body font-bold mb-2">
                         Aethelred Industries — Division Haven
                     </h2>
-                    <div className="w-24 h-0.5 bg-orange"></div>
+                    <div className="w-24 h-0.5 bg-orange" />
                 </motion.div>
 
                 {/* Main Title */}
@@ -67,10 +67,10 @@ export function HeroSection() {
                         ease: 'easeInOut',
                     }}
                 >
-                    <div className="absolute inset-0 rounded-full border-2 border-cream/20 scale-110 animate-pulse-slow"></div>
-                    <div className="absolute inset-0 rounded-full border border-orange/20 scale-125"></div>
+                    <div className="absolute inset-0 rounded-full border-2 border-cream/20 scale-110 animate-pulse-slow" />
+                    <div className="absolute inset-0 rounded-full border border-orange/20 scale-125" />
 
-                    {/* 👉 ICI on utilise l'import */}
+                    {/* ✅ L’URL build sera un truc du style ./assets/rocket-xxxx.png */}
                     <img
                         src={rocketImg}
                         alt="Project Haven Rocket"
@@ -97,8 +97,8 @@ export function HeroSection() {
             </div>
 
             {/* Bottom decorative border */}
-            <div className="absolute bottom-0 left-0 w-full h-2 bg-orange-accent"></div>
-            <div className="absolute bottom-2 left-0 w-full h-1 bg-cream"></div>
+            <div className="absolute bottom-0 left-0 w-full h-2 bg-orange-accent" />
+            <div className="absolute bottom-2 left-0 w-full h-1 bg-cream" />
         </section>
     );
 }

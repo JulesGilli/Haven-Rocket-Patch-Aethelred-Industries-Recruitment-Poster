@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [react()],
-    base: './',
+    base: './',      // ✅ OK pour build statique dans un sous-dossier
+    build: {
+        outDir: 'docs' // ✅ optionnel mais pratique pour GitHub Pages
+    }
 })
