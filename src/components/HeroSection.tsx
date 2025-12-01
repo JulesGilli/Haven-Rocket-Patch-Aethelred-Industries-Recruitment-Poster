@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { RetroButton } from './RetroButton';
 
+// 👉 IMPORT DE L'IMAGE
+import rocketImg from '../assets/rocket.png';
+
 export function HeroSection() {
     return (
         <section className="relative min-h-screen w-full bg-navy overflow-hidden flex flex-col items-center justify-center pt-20 pb-16 px-4 bg-noise">
@@ -67,9 +70,9 @@ export function HeroSection() {
                     <div className="absolute inset-0 rounded-full border-2 border-cream/20 scale-110 animate-pulse-slow"></div>
                     <div className="absolute inset-0 rounded-full border border-orange/20 scale-125"></div>
 
-                    {/* ↘ ICI, on pointe vers public/rocket.png */}
+                    {/* 👉 ICI on utilise l'import */}
                     <img
-                        src="/rocket.png"
+                        src={rocketImg}
                         alt="Project Haven Rocket"
                         className="w-full h-full object-contain drop-shadow-2xl"
                     />
@@ -88,9 +91,7 @@ export function HeroSection() {
                         </RetroButton>
                     </Link>
                     <Link to="/mission">
-                        <RetroButton variant="outline">
-                            Découvrir la Mission
-                        </RetroButton>
+                        <RetroButton variant="outline">Découvrir la Mission</RetroButton>
                     </Link>
                 </motion.div>
             </div>
