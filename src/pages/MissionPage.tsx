@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Shield, Zap, Utensils, Thermometer, Wind, AlertTriangle, Skull, Clock, Wrench, Radio, Activity, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { Shield, Zap, Utensils, Thermometer, Wind, AlertTriangle, Skull, Wrench, Radio, Activity, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { RetroButton } from '../components/RetroButton';
 import { Footer } from '../components/Footer';
 import { VintageBadge } from '../components/VintageBadge';
@@ -315,34 +315,28 @@ export function MissionPage() {
 
       {/* 8. Why 30 Minutes? */}
       <section className="py-20 px-4 bg-cream paper-texture border-t-4 border-navy">
-        <div className="max-w-3xl mx-auto text-center relative">
-          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-navy text-cream p-4 rounded-full border-4 border-cream shadow-xl">
-            <Clock className="w-12 h-12" />
-          </div>
+          <div className="max-w-3xl mx-auto text-center relative">
 
-          <h2 className="text-4xl md:text-5xl font-display text-navy mt-16 mb-8">
-            POURQUOI 30 MINUTES ?
-          </h2>
+              <h2 className="text-4xl md:text-5xl font-display text-navy mt-16 mb-8">
+                  POURQUOI 30 MINUTES ?
+              </h2>
 
-          <div className="space-y-4 text-left max-w-xl mx-auto bg-white/60 p-8 border-2 border-dashed border-navy/30">
-            <p className="flex items-center gap-3 font-display text-xl text-navy">
-              <span className="text-orange">01.</span> Optimisation des coûts
-              opérationnels
-            </p>
-            <p className="flex items-center gap-3 font-display text-xl text-navy">
-              <span className="text-orange">02.</span> Maximisation de
-              l'efficacité temporelle
-            </p>
-            <p className="flex items-center gap-3 font-display text-xl text-navy">
-              <span className="text-orange">03.</span> Minimisation de
-              l'exposition aux risques
-            </p>
-            <p className="mt-8 text-xs font-body text-vintage-text/60 text-center uppercase tracking-widest">
-              (Raison réelle : Plus longtemps = plus de morts = plus de
-              paperasse)
-            </p>
+              <div className="space-y-4 text-left max-w-xl mx-auto bg-white/60 p-8 border-2 border-dashed border-navy/30">
+                  <p className="flex items-center gap-3 font-display text-xl text-navy">
+                      <span className="text-orange">01.</span> Optimisation des coûts opérationnels
+                  </p>
+                  <p className="flex items-center gap-3 font-display text-xl text-navy">
+                      <span className="text-orange">02.</span> Maximisation de l'efficacité temporelle
+                  </p>
+                  <p className="flex items-center gap-3 font-display text-xl text-navy">
+                      <span className="text-orange">03.</span> Minimisation de l'exposition aux risques
+                  </p>
+
+                  <p className="mt-8 text-xs font-body text-vintage-text/60 text-center uppercase tracking-widest">
+                      (Raison réelle : Plus longtemps = plus de morts = plus de paperasse)
+                  </p>
+              </div>
           </div>
-        </div>
       </section>
 
       {/* 9. Final CTA */}

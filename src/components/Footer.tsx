@@ -31,7 +31,7 @@ export function Footer() {
         <div className="w-full h-px bg-cream/10 mb-8"></div>
 
         <p className="text-xs font-body">
-          © 2024 Aethelred Industries. Tous droits réservés. Tous risques
+          © 2154 Aethelred Industries. Tous droits réservés. Tous risques
           assumés par l'employé.
         </p>
       </div>
