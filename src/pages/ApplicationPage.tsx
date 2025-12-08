@@ -199,10 +199,10 @@ export function ApplicationPage() {
                                     name="experience"
                                     className="w-full bg-cream border-2 border-navy p-3 font-body"
                                 >
-                                    <option>Aucune (Idéal)</option>
-                                    <option>Minimale</option>
-                                    <option>J'ai survécu à pire</option>
-                                    <option>Je maîtrise le chat vocal</option>
+                                    <option>Déchet Spatial Non-Qualifié (Débutant total)</option>
+                                    <option>Technicien du Bouton Rouge (Intermédiaire)</option>
+                                    <option>Opérateur Semi-Stabilisé de Production (Autonome)</option>
+                                    <option>Ingénieur Senior en Chaos Ludique (Expérimenté)</option>
                                 </select>
                             </div>
 
